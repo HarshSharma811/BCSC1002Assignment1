@@ -16,4 +16,12 @@ public class Library {
     public Library() {
         this.Book = new String[5];
     }
+
+    public String[] getBook() {
+        return Book.clone();
+    }
+
+    public void setBook(String[] book) {
+        this.Book = book;
+    }
 }
