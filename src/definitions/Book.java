@@ -4,7 +4,11 @@
  *  Time: 3:49 PM
  *  File Name : Book.java
  * */
+
 package definitions;
 
 public class Book {
+    private String bookName;
+    private String authorName;
+    private String ISDNBookNumber;
 }
