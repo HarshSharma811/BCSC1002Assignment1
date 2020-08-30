@@ -1,9 +1,8 @@
 /*  Created by IntelliJ IDEA.
- *  User: Divyansh Bhardwaj (dbc2201)
- *  Date: 21/08/20
- *  Time: 3:50 PM
+ *  User: Harsh Sharma
  *  File Name : Library.java
  * */
+
 package definitions;
 
 import java.util.Arrays;
@@ -55,4 +54,13 @@ public class Library {
             }
         }
     }
+/*
+    /**
+     * This method allowed us to issue a new book form library.
+     */
+    /*public void doCheckOut(String bookName){
+        System.out.println('\'' + bookName + '\'' + "book is issued to you successfully. ");
+    }
+
+     */
 }
