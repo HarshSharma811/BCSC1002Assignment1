@@ -4,8 +4,12 @@
  * */
 package execution;
 
+import definitions.Student;
+
 public class FrontDesk {
     public static void main(String[] args) {
+        Student info = new Student();
+        info.studentInfo();
 
     }
 }
