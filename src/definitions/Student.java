@@ -6,6 +6,8 @@
  * */
 package definitions;
 
+import java.util.Arrays;
+
 public class Student {
     private String firstName;
     private String middleName;
@@ -82,5 +84,15 @@ public class Student {
 
     public void setBooks(String[] books) {
         this.books = books;
+    }
+
+    @Override
+    public String toString() {
+        return "firstName='" + firstName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", universityRollNumber=" + universityRollNumber +
+                ", bookIssuedByStudent=" + bookIssuedByStudent +
+                ", books=" + Arrays.toString(books);
     }
 }
