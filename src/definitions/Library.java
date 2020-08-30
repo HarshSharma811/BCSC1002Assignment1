@@ -9,27 +9,27 @@ package definitions;
 import java.util.Arrays;
 
 public class Library {
-    private String[] Book;
+    private String[] Books;
 
-    public Library(String[] Book) {
-        this.Book = new String[5];
+    public Library(String[] Books) {
+        this.Books = new String[5];
     }
 
     public Library() {
-        this.Book = new String[5];
+        this.Books = new String[5];
     }
 
-    public String[] getBook() {
-        return Book.clone();
+    public String[] getBooks() {
+        return Books.clone();
     }
 
-    public void setBook(String[] book) {
-        this.Book = book;
+    public void setBooks(String[] books) {
+        this.Books = books;
     }
 
     @Override
     public String toString() {
-        return Arrays.toString(Book);
+        return Arrays.toString(Books);
     }
 
     @Override
@@ -37,11 +37,22 @@ public class Library {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Library library = (Library) o;
-        return Arrays.equals(getBook(), library.getBook());
+        return Arrays.equals(getBooks(), library.getBooks());
     }
 
     @Override
     public int hashCode() {
-        return Arrays.hashCode(getBook());
+        return Arrays.hashCode(getBooks());
+    }
+
+    /**
+     * This method is used to display the books names.
+     */
+    public void listInventory() {
+        for (String Book : this.Books) {
+            if (Book != null) {
+                System.out.println(Book);
+            }
+        }
     }
 }
