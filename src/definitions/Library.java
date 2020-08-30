@@ -72,4 +72,13 @@ public class Library {
     public void doCheckOut(String bookName) {
         System.out.println('\'' + bookName + '\'' + "book is issued to you succcessfully. ");
     }
+
+    /**
+     * This method is used to return books.
+     *
+     * @param booksName booksName allows student to input the book name.
+     */
+    public void doReturn(String booksName) {
+        System.out.println('\'' + booksName + '\'' + "book returned successfully. ");
+    }
 }
