@@ -56,11 +56,9 @@ public class Library {
     }
 /*
     /**
-     * This method allowed us to issue a new book form library.
+     * This method allowed us to add a new book in the library.
      */
-    /*public void doCheckOut(String bookName){
-        System.out.println('\'' + bookName + '\'' + "book is issued to you successfully. ");
+public void addBooks(String booksName) {
+    System.out.println('\'' + booksName + '\'' + "book is added successfully. ");
     }
-
-     */
 }
