@@ -6,8 +6,10 @@ package definitions;
 
 import java.util.Arrays;
 import java.util.Objects;
+import java.util.Scanner;
 
 public class Student {
+    Scanner scannerObject = new Scanner(System.in);
     private String firstName;
     private String middleName;
     private String lastName;
@@ -113,6 +115,20 @@ public class Student {
         int result = Objects.hash(getFirstName(), getMiddleName(), getLastName(), getUniversityRollNumber(), getBookIssuedByStudent());
         result = 31 * result + Arrays.hashCode(getBooks());
         return result;
+    }
+
+    /**
+     * This method allows student to enter their details.
+     */
+    public void studentInfo() {
+        System.out.println("Enter your first name: ");
+        String firstName = scannerObject.next();
+        System.out.println("Enter your middle name: ");
+        String middleName = scannerObject.next();
+        System.out.println("Enter your last name: ");
+        String lastName = scannerObject.next();
+        System.out.println("Enter your University roll number: ");
+        String rollNumber = scannerObject.next();
     }
 
 }
