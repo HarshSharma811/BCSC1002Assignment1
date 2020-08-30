@@ -35,7 +35,6 @@ public class FrontDesk {
             case Issue_a_new_book_for_me:
                 System.out.println("Enter the name of the book, you want to issued: ");
                 bookName = scannerObject.nextLine();
-                scannerObject.nextLine();
                 libraryObject.doCheckOut(bookName);
                 break;
             case Return_a_previously_issued_book_for_me:
@@ -50,7 +49,7 @@ public class FrontDesk {
             case Exit:
                 break;
             default:
-                System.out.println("BSDK shii option daal.");
+                System.out.println("Please Enter the valid Option.");
 
         }
     }
