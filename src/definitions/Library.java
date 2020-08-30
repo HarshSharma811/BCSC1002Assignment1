@@ -54,11 +54,22 @@ public class Library {
             }
         }
     }
-/*
+
     /**
      * This method allowed us to add a new book in the library.
+     *
+     * @param booksName bookName allow user to enter the book name.
      */
-public void addBooks(String booksName) {
-    System.out.println('\'' + booksName + '\'' + "book is added successfully. ");
+    public void addBooks(String booksName) {
+        System.out.println('\'' + booksName + '\'' + "book is added successfully. ");
+    }
+
+    /**
+     * This method is allows us to issued a book from library.
+     *
+     * @param bookName bookName allow user to enter the book name that user want to issue.
+     */
+    public void doCheckOut(String bookName) {
+        System.out.println('\'' + bookName + '\'' + "book is issued to you succcessfully. ");
     }
 }
