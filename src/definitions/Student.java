@@ -130,5 +130,4 @@ public class Student {
         System.out.println("Enter your University roll number: ");
         String rollNumber = scannerObject.next();
     }
-
 }
